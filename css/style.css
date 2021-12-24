@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Kirsty';
+    font-weight: 700;
+    font-style: normal;
+}
+.vortitel{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+header{
+    text-align: center;
+}
+#containerZentrum{
+    width: 42%;
+    padding:2rem 4rem;
+    margin: auto;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.75);
+}
+.buttonKalorienRechnen{
+    background-color: black;
+    border:none;
+    color:white;
+    font-weight: 800;
+    width: 40%;
+    padding:1rem 0px;
+    cursor: pointer;
+}
+.option{
+    cursor: pointer;
+    border: 1px solid grey;
+    width: 100%;
+    padding:0.8rem 0px;
+}
+.optionSelected{
+    border: 3px solid black;
+    font-weight: 800;
+}
+#optionsSelectionPlan{
+    display: flex;
+    gap:6%;
+    justify-content: space-around;
+}
+
+.inputsDataInsertion{
+    width: 95%;
+    padding: 1rem;
+}
+#geschlecht{
+    display: flex;
+    width: 100%;
+    border: 1px solid grey;
+}
+#physikalInformationen1{
+    display: flex;
+    margin: 2rem 0px;
+    gap: 3%;
+}
+#physikalInformationen2{
+    display: flex;
+    margin: 2rem 0px;
+    gap: 3%;
+}
+.geslechtOptionen{
+    border: 1px solid grey;
+    width: 100%;
+    background-color: white;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.mehrInformationenParagraph{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin: 2rem 0px;
+}
+.mehrInformationenParagraph div, .mehrInformationenParagraph input{
+    width: 100%;
+    text-align: left;
+}
+.adjektivesBeiArbeitAktivitat{
+    border: 1px solid black;
+    display: flex;
+    gap: 4rem;
+}
+
+.popup{
+    position: absolute;
+    padding: 2rem;
+    font-size: 1.5rem;
+    top: 40%;
+    left: 50%;
+    width: 49%;
+    height: 60%;
+    background-color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.notVisible{
+    visibility: hidden;
+}
+.crossSchliessen{
+    font-size: 2.5rem;
+    visibility: visible;
+    color: black;
+    margin-left: 95%;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.colorGreyBackground{
+    background-color: rgba(154,153,141,0.7);
+}

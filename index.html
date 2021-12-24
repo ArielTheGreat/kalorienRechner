@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner</title>
+    <link href="http://fonts.cdnfonts.com/css/kirsty" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Kalorienrechner</h1>
+        <p class="vortitel">Berechne deinen Kalorienbedarf</p>
+    </header>
+    <div id="containerZentrum">
+        <div id="optionsSelectionPlan">
+            <div id="Muskelaufbau" class="option">
+                <img src="./images/upper_arm.png">
+                <p>Muskelaufbau</p>
+            </div>
+            <div id="Abnehmen" class="option">
+                <img src="./images/body.png">
+                <p>Abnehmen</p>
+            </div>
+        </div>
+        <div id="physikalInformationen1">
+            <div id="geschlecht">
+                <button class="geslechtOptionen" onclick="geschlechtÄndert(0)">Weiblich</button>
+                <button class="geslechtOptionen" onclick="geschlechtÄndert(1)">Männlich</button>
+            </div>
+            <input id="alterVonUser" class="inputsDataInsertion" min="16" max="99" placeholder="Alter" type="number">
+        </div>
+        <div id="physikalInformationen2">
+            <input id="gewichtVonUser" class="inputsDataInsertion" min="50" max="200" placeholder="Gewicht in Kg" type="number">
+            <input id="grosseVonUser" class="inputsDataInsertion" min="140" max="210" placeholder="Größe in cm" type="number">
+        </div>
+        <div class="mehrInformationenParagraph">
+            <div>Aktvitätsniveau bei der Arbeit</div>
+            <div><input id="arbeitsAktivitatsNiveau" type="range" step="33.3333"><br><div class="adjektivesBeiArbeitAktivitat"><div>sitzend</div><div>stehend</div> <div>gehend</div> <div>anstrengend</div> </div></div>
+        </div>
+        <div class="mehrInformationenParagraph">
+            <div>Wöchentliche Sporteinheiten</div>
+            <div><input id="wochentlicheSporteinheiten" type="range" step="14.28571"><br><div class="adjektivesBeiArbeitAktivitat"><div>0</div><div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div> <div>7</div> </div></div>
+        </div>
+        <button class="buttonKalorienRechnen" onclick="returnWieVieleKalorienBrauchMan()">KALORIEN BERECHNEN</button>
+    </div>
+
+    <div id="popup">
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
